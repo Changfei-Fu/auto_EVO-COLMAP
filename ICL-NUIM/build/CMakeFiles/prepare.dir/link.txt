@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG  -rdynamic CMakeFiles/prepare.dir/src/prepare.cc.o  -o ../prepare  -L/usr/local/cuda-11.4/lib64 
