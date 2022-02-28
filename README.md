@@ -5,18 +5,18 @@ This project use evo to evaluate colmap on several datasets such as EuRoc, TUM, 
 
 2. build colmap
 
-cd colmap
+  cd colmap
 
-mkdir build
+  mkdir build
 
-cd build
+  cd build
 
-cmake ..
+  cmake ..
 
-make -j
+  make -j
 
-sudo make install
+  sudo make install
 
 3. run evo_EuRoc.py evo_ICL-NUIM.py and evo_Tum.py
 
-evo_Tum.py ~/dataset/Tum/
+  evo_Tum.py ~/dataset/Tum/
