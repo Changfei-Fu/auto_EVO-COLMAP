@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="COLMAP" targetName="lsd" />
+      <config projectName="COLMAP" targetName="colmap_sources" />
+      <config projectName="COLMAP" targetName="colmap_exe" />
+      <config projectName="COLMAP" targetName="pba" />
+      <config projectName="COLMAP" targetName="colmap" />
+      <config projectName="COLMAP" targetName="graclus" />
+      <config projectName="COLMAP" targetName="poisson_recon" />
+      <config projectName="COLMAP" targetName="sqlite3" />
+      <config projectName="COLMAP" targetName="uninstall" />
+      <config projectName="COLMAP" targetName="sift_gpu" />
+      <config projectName="COLMAP" targetName="vlfeat" />
+      <config projectName="COLMAP" targetName="colmap_cuda" />
+      <config projectName="COLMAP" targetName="flann" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad5eb722-4df1-493f-84df-3974a5c1419a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/detect_cuda_compute_capabilities.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colmap_ws/database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colmap_ws/sparse/0/cameras.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colmap_ws/sparse/0/images.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colmap_ws/sparse/0/points3D.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colmap_ws/sparse/0/project.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.clang-format" beforeDir="false" afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/FindEigen3.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/FindEigen3.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/FindFreeImage.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/FindFreeImage.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/FindGlew.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/FindGlew.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/FindGlog.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/FindGlog.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/bibliography.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/bibliography.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/database.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/database.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/images/sparse.png" beforeDir="false" afterPath="$PROJECT_DIR$/doc/images/sparse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/install.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/tutorial.rst" beforeDir="false" afterPath="$PROJECT_DIR$/doc/tutorial.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/quick-start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/quick-start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/setup-centos.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/setup-centos.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/setup-ubuntu.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/setup-ubuntu.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FLANN/ext/lz4.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FLANN/ext/lz4.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FLANN/ext/lz4.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FLANN/ext/lz4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FLANN/ext/lz4hc.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FLANN/ext/lz4hc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FLANN/ext/lz4hc.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/FLANN/ext/lz4hc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Graclus/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Graclus/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/LSD/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/LSD/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/ConfigBA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/ConfigBA.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/ConfigBA.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/ConfigBA.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/CuTexImage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/CuTexImage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/CuTexImage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/CuTexImage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/DataInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/DataInterface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/ProgramCU.cu" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/ProgramCU.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/ProgramCU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/ProgramCU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/SparseBundleCPU.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/SparseBundleCPU.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/SparseBundleCPU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/SparseBundleCPU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/SparseBundleCU.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/SparseBundleCU.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/SparseBundleCU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/SparseBundleCU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/pba.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/pba.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/pba.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/pba.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PBA/util.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PBA/util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Allocator.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Allocator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Array.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Array.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Array.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/BSplineData.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/BSplineData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/BSplineData.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/BSplineData.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/BinaryNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/BinaryNode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/CmdLineParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/CmdLineParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/CmdLineParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/CmdLineParser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/CmdLineParser.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/CmdLineParser.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Factor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Factor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Factor.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Factor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/FunctionData.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/FunctionData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/FunctionData.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/FunctionData.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Geometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Geometry.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Geometry.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Geometry.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Geometry.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Geometry.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MAT.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MAT.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MAT.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MAT.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MarchingCubes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MarchingCubes.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MarchingCubes.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MarchingCubes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MemoryUsage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MemoryUsage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.Evaluation.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.Evaluation.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.IsoSurface.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.IsoSurface.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.SortedTreeNodes.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.SortedTreeNodes.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.System.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.System.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.WeightedSamples.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.WeightedSamples.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MultiGridOctreeData.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/MyTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/MyTime.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Octree.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Octree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Octree.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Octree.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/PPolynomial.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/PPolynomial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/PPolynomial.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/PPolynomial.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Ply.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Ply.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/PlyFile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/PlyFile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/PointStream.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/PointStream.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/PointStream.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/PointStream.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/PoissonRecon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/PoissonRecon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Polynomial.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Polynomial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/Polynomial.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/Polynomial.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/SparseMatrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/SparseMatrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/SparseMatrix.inl" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/SparseMatrix.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PoissonRecon/SurfaceTrimmer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PoissonRecon/SurfaceTrimmer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SQLite/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SQLite/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/CLTexImage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/CLTexImage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/CLTexImage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/CLTexImage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/CuTexImage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/CuTexImage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/CuTexImage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/CuTexImage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/FrameBufferObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/FrameBufferObject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/FrameBufferObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/FrameBufferObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/GLTexImage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/GLTexImage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/GLTexImage.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/GLTexImage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/GlobalUtil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/GlobalUtil.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/GlobalUtil.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/GlobalUtil.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/LiteWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/LiteWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramCG.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramCG.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramCG.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramCG.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramCL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramCL.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramCL.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramCL.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramCU.cu" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramCU.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramCU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramCU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramGLSL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramGLSL.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramGLSL.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramGLSL.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ProgramGPU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ProgramGPU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/PyramidCL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/PyramidCL.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/PyramidCL.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/PyramidCL.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/PyramidCU.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/PyramidCU.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/PyramidCU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/PyramidCU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/PyramidGL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/PyramidGL.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/PyramidGL.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/PyramidGL.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ShaderMan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ShaderMan.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/ShaderMan.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/ShaderMan.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftGPU.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftGPU.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftGPU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftGPU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftMatch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftMatch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftMatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftMatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftMatchCU.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftMatchCU.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftMatchCU.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftMatchCU.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftPyramid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftPyramid.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SiftGPU/SiftPyramid.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/SiftGPU/SiftPyramid.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/aib.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/aib.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/aib.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/aib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/array.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/array.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/array.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/covdet.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/covdet.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/covdet.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/covdet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/dsift.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/dsift.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/dsift.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/dsift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/fisher.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/fisher.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/fisher.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/fisher.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/float.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/float.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/generic.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/generic.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/generic.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/generic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/getopt_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/getopt_long.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/getopt_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/getopt_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/gmm.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/gmm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/gmm.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/gmm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/heap-def.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/heap-def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/hikmeans.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/hikmeans.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/hikmeans.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/hikmeans.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/hog.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/hog.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/hog.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/hog.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/homkermap.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/homkermap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/homkermap.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/homkermap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/host.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/host.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/host.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/host.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/ikmeans.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/ikmeans.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/ikmeans.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/ikmeans.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/ikmeans_elkan.tc" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/ikmeans_elkan.tc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/ikmeans_init.tc" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/ikmeans_init.tc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/ikmeans_lloyd.tc" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/ikmeans_lloyd.tc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/imopv.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/imopv.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/imopv.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/imopv.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/imopv_sse2.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/imopv_sse2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/imopv_sse2.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/imopv_sse2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/kdtree.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/kdtree.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/kdtree.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/kdtree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/kmeans.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/kmeans.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/kmeans.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/kmeans.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/lbp.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/lbp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/lbp.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/lbp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/liop.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/liop.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/liop.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/liop.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mathop.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mathop.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mathop.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mathop.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mathop_avx.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mathop_avx.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mathop_avx.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mathop_avx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mathop_sse2.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mathop_sse2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mathop_sse2.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mathop_sse2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mser.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mser.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/mser.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/mser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/pgm.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/pgm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/pgm.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/pgm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/qsort-def.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/qsort-def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/quickshift.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/quickshift.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/quickshift.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/quickshift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/random.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/random.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/random.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/random.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/rodrigues.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/rodrigues.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/rodrigues.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/rodrigues.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/scalespace.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/scalespace.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/scalespace.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/scalespace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/shuffle-def.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/shuffle-def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/sift.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/sift.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/sift.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/sift.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/slic.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/slic.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/slic.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/slic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/stringop.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/stringop.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/stringop.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/stringop.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/svm.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/svm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/svm.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/svm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/svmdataset.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/svmdataset.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/svmdataset.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/svmdataset.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/vlad.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/vlad.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/VLFeat/vlad.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/VLFeat/vlad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/matlab/plot_model.m" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/matlab/plot_model.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/matlab/quat2rotmat.m" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/matlab/quat2rotmat.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/matlab/read_model.m" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/matlab/read_model.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/matlab/read_ply.m" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/matlab/read_ply.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/matlab/write_ply.m" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/matlab/write_ply.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/bundler_to_ply.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/bundler_to_ply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/clang_format_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/clang_format_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/crawl_camera_specs.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/crawl_camera_specs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/export_inlier_matches.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/export_inlier_matches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/export_inlier_pairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/export_inlier_pairs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/export_to_bundler.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/export_to_bundler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/export_to_visualsfm.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/export_to_visualsfm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/flickr_downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/flickr_downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/merge_ply_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/merge_ply_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/nvm_to_ply.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/nvm_to_ply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/plyfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/plyfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/read_write_dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/read_write_dense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/read_write_fused_vis.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/read_write_fused_vis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/read_write_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/read_write_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/test_read_write_dense.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/test_read_write_dense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/test_read_write_fused_vis.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/test_read_write_fused_vis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/python/test_read_write_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/python/test_read_write_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/shell/build_mac_app.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/shell/build_mac_app.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/shell/colmap.bat" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/shell/colmap.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/shell/images_to_video.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/shell/images_to_video.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/shell/run_tests.bat" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/shell/run_tests.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera_database.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera_database.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera_database.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera_database.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera_database_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera_database_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera_models.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera_models.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera_models_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera_models_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/camera_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/camera_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/correspondence_graph.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/correspondence_graph.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/correspondence_graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/correspondence_graph.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/correspondence_graph_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/correspondence_graph_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/cost_functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/cost_functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/cost_functions_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/cost_functions_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/database.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/database.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/database_cache.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/database_cache.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/database_cache.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/database_cache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/database_cache_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/database_cache_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/essential_matrix.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/essential_matrix.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/essential_matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/essential_matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/essential_matrix_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/essential_matrix_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/gps.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/gps.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/gps.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/gps.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/gps_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/gps_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/homography_matrix.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/homography_matrix.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/homography_matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/homography_matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/homography_matrix_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/homography_matrix_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/image.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/image.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/image.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/image_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/image_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/point2d.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/point2d.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/point2d.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/point2d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/point2d_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/point2d_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/point3d.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/point3d.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/point3d.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/point3d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/point3d_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/point3d_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/pose.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/pose.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/pose.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/pose.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/pose_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/pose_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/projection.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/projection.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/projection.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/projection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/projection_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/projection_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/reconstruction.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/reconstruction.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/reconstruction.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/reconstruction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/reconstruction_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/reconstruction_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/similarity_transform.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/similarity_transform.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/similarity_transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/similarity_transform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/similarity_transform_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/similarity_transform_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/track.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/track.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/track.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/track.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/track_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/track_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/triangulation.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/triangulation.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/triangulation.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/triangulation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/triangulation_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/triangulation_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/visibility_pyramid.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/visibility_pyramid.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/visibility_pyramid.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/visibility_pyramid.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/visibility_pyramid_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/visibility_pyramid_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/warp.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/warp.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/warp.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/warp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/warp_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/warp_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/automatic_reconstruction.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/automatic_reconstruction.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/automatic_reconstruction.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/automatic_reconstruction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/absolute_pose.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/absolute_pose.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/absolute_pose.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/absolute_pose.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/essential_matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/essential_matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/essential_matrix_coeffs.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/essential_matrix_coeffs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/essential_matrix_poly.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/essential_matrix_poly.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/euclidean_transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/euclidean_transform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/fundamental_matrix.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/fundamental_matrix.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/fundamental_matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/fundamental_matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/fundamental_matrix_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/fundamental_matrix_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/homography_matrix.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/homography_matrix.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/homography_matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/homography_matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/homography_matrix_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/homography_matrix_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/pose.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/pose.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/pose.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/pose.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/similarity_transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/similarity_transform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/translation_transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/translation_transform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/translation_transform_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/translation_transform_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/triangulation.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/triangulation.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/triangulation.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/triangulation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/two_view_geometry.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/two_view_geometry.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/two_view_geometry.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/two_view_geometry.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/utils.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/utils.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/estimators/utils_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/estimators/utils_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exe/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exe/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/feature/types.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature/types.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/feature/utils_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature/utils_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/cuda_array_wrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/cuda_array_wrapper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/cuda_flip.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/cuda_flip.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/cuda_rotate.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/cuda_rotate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/cuda_transpose.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/cuda_transpose.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/depth_map.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/depth_map.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/depth_map.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/depth_map.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/fusion.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/fusion.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/fusion.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/fusion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/gpu_mat_prng.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/gpu_mat_prng.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/gpu_mat_prng.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/gpu_mat_prng.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/gpu_mat_ref_image.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/gpu_mat_ref_image.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/gpu_mat_ref_image.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/gpu_mat_ref_image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/gpu_mat_test.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/gpu_mat_test.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/image.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/image.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/image.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/mat.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/mat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/model.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/model.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/normal_map.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/normal_map.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/normal_map.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/normal_map.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/patch_match.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/patch_match.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/patch_match_cuda.cu" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/patch_match_cuda.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvs/patch_match_cuda.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvs/patch_match_cuda.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/bundle_adjustment.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/bundle_adjustment.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/bundle_adjustment.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/bundle_adjustment.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/bundle_adjustment_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/bundle_adjustment_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/combination_sampler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/combination_sampler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/combination_sampler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/combination_sampler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/combination_sampler_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/combination_sampler_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/loransac.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/loransac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/loransac_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/loransac_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/progressive_sampler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/progressive_sampler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/progressive_sampler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/progressive_sampler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/progressive_sampler_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/progressive_sampler_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/random_sampler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/random_sampler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/random_sampler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/random_sampler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/random_sampler_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/random_sampler_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/ransac.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/ransac.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/ransac_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/ransac_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/sampler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/sampler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/sprt.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/sprt.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/sprt.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/sprt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/support_measurement.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/support_measurement.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/support_measurement.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/support_measurement.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optim/support_measurement_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/optim/support_measurement_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sfm/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sfm/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sfm/incremental_mapper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/sfm/incremental_mapper.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sfm/incremental_mapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sfm/incremental_mapper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sfm/incremental_triangulator.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/sfm/incremental_triangulator.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sfm/incremental_triangulator.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sfm/incremental_triangulator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/bundle_adjustment_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/bundle_adjustment_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/colormaps.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/colormaps.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/colormaps.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/colormaps.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/database_management_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/database_management_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/database_management_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/database_management_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/feature_extraction_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/feature_extraction_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/feature_extraction_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/feature_extraction_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/feature_matching_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/feature_matching_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/feature_matching_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/feature_matching_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/image_viewer_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/image_viewer_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/image_viewer_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/image_viewer_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/line_painter.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/line_painter.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/line_painter.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/line_painter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/log_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/log_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/log_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/log_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/main_window.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/main_window.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/main_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/main_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/automatic-reconstruction.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/automatic-reconstruction.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/bundle-adjustment.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/bundle-adjustment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/database-management.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/database-management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/dense-reconstruction.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/dense-reconstruction.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/export-all.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/export-all.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/export-as-text.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/export-as-text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/export-as.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/export-as.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/export.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/export.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/feature-extraction.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/feature-extraction.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/feature-matching.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/feature-matching.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/grab-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/grab-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/grab-movie.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/grab-movie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/import-from.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/import-from.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/import.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/import.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/log.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/log.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/match-matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/match-matrix.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/project-edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/project-edit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/project-new.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/project-new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/project-open.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/project-open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/project-save-as.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/project-save-as.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/project-save.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/project-save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/reconstruction-normalize.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/reconstruction-normalize.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/reconstruction-options.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/reconstruction-options.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/reconstruction-pause.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/reconstruction-pause.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/reconstruction-reset.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/reconstruction-reset.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/reconstruction-start.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/reconstruction-start.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/reconstruction-stats.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/reconstruction-stats.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/reconstruction-step.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/reconstruction-step.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/render-disabled.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/render-disabled.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/render-enabled.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/render-enabled.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/render-options.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/render-options.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/render-reset-view.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/render-reset-view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/media/undistort.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/media/undistort.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/movie_grabber_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/movie_grabber_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/options_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/options_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/options_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/options_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/point_painter.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/point_painter.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/point_painter.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/point_painter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/point_viewer_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/point_viewer_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/point_viewer_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/point_viewer_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/project_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/project_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/project_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/project_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/qt_utils.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/qt_utils.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/qt_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/qt_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/reconstruction_manager_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/reconstruction_manager_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/reconstruction_manager_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/reconstruction_manager_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/reconstruction_options_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/reconstruction_options_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/reconstruction_stats_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/reconstruction_stats_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/reconstruction_stats_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/reconstruction_stats_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/render_options_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/render_options_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/render_options_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/render_options_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/resources.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/resources.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/shaders/lines.f.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/shaders/lines.f.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/shaders/lines.g.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/shaders/lines.g.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/shaders/lines.v.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/shaders/lines.v.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/shaders/points.f.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/shaders/points.f.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/shaders/points.v.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/shaders/points.v.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/shaders/triangles.f.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/shaders/triangles.f.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/shaders/triangles.v.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/shaders/triangles.v.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/triangle_painter.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/triangle_painter.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/triangle_painter.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/triangle_painter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/undistortion_widget.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/undistortion_widget.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/undistortion_widget.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/undistortion_widget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/bitmap.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/bitmap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/bitmap_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/bitmap_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/camera_specs.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/camera_specs.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/camera_specs.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/camera_specs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/cuda.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/cuda.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/cuda.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/cuda.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/logging.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/logging.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/logging.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/logging.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/math.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/math.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/math.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/math.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/math_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/math_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/misc.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/misc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/misc_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/misc_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/opengl_utils.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/opengl_utils.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/opengl_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/opengl_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/option_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/option_manager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/random.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/random.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/random.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/random.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/random_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/random_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/sqlite3_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/sqlite3_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/threading.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/threading.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/threading.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/threading.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/threading_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/threading_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/timer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/timer.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/timer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/timer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/timer_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/timer_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/types.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/types.h" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21M6KJf7isNJKuSTzmz3GyZ2WJz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="CMake Application.colmap_exe">
+    <configuration name="colmap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="colmap" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="colmap_cuda" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="colmap_cuda" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="colmap_exe" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="colmap_exe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="COLMAP" RUN_TARGET_NAME="colmap_exe">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="colmap_sources" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="colmap_sources" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="flann" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="flann" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="graclus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="graclus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lsd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="lsd" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pba" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="pba" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="poisson_recon" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="poisson_recon" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sift_gpu" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="sift_gpu" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sqlite3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="sqlite3" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vlfeat" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLMAP" TARGET_NAME="vlfeat" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.colmap" />
+      <item itemvalue="CMake Application.colmap_cuda" />
+      <item itemvalue="CMake Application.colmap_exe" />
+      <item itemvalue="CMake Application.colmap_sources" />
+      <item itemvalue="CMake Application.flann" />
+      <item itemvalue="CMake Application.graclus" />
+      <item itemvalue="CMake Application.lsd" />
+      <item itemvalue="CMake Application.pba" />
+      <item itemvalue="CMake Application.poisson_recon" />
+      <item itemvalue="CMake Application.sift_gpu" />
+      <item itemvalue="CMake Application.sqlite3" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.vlfeat" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad5eb722-4df1-493f-84df-3974a5c1419a" name="Default Changelist" comment="" />
+      <created>1637738543183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637738543183</updated>
+      <workItem from="1637738544928" duration="4989000" />
+      <workItem from="1637754264577" duration="2783000" />
+      <workItem from="1637757406113" duration="1149000" />
+      <workItem from="1639019910550" duration="3000" />
+      <workItem from="1639027376344" duration="5000" />
+      <workItem from="1639120201886" duration="442000" />
+      <workItem from="1639812813799" duration="7000" />
+      <workItem from="1644402757165" duration="5008000" />
+      <workItem from="1644411220150" duration="1214000" />
+      <workItem from="1644415560924" duration="61000" />
+      <workItem from="1644416287746" duration="2709000" />
+      <workItem from="1644478762360" duration="1209000" />
+      <workItem from="1644480346873" duration="1005000" />
+      <workItem from="1644481480361" duration="2194000" />
+      <workItem from="1644483789844" duration="616000" />
+      <workItem from="1644484452897" duration="401000" />
+      <workItem from="1644485124230" duration="1808000" />
+      <workItem from="1644507721472" duration="2221000" />
+      <workItem from="1644583098388" duration="5616000" />
+      <workItem from="1644669055493" duration="7968000" />
+      <workItem from="1644927874221" duration="7877000" />
+      <workItem from="1645105265658" duration="2755000" />
+      <workItem from="1645361475991" duration="696000" />
+      <workItem from="1645601510745" duration="829000" />
+      <workItem from="1645606599508" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="914" width="1720" height="882" key="DiffContextDialog" timestamp="1644410948931">
+      <screen x="0" y="816" width="1920" height="1080" />
+    </state>
+    <state x="100" y="914" width="1720" height="882" key="DiffContextDialog/1920.0.2560.1440/0.816.1920.1080@0.816.1920.1080" timestamp="1644410948931" />
+    <state x="753" y="1127" width="442" height="447" key="FileChooserDialogImpl" timestamp="1644669219952">
+      <screen x="0" y="816" width="1920" height="1080" />
+    </state>
+    <state x="753" y="1127" width="442" height="447" key="FileChooserDialogImpl/1920.0.2560.1440/0.816.1920.1080@0.816.1920.1080" timestamp="1644669219952" />
+    <state x="2924" y="415" key="FileChooserDialogImpl/1920.0.2560.1440/0.816.1920.1080@1920.0.2560.1440" timestamp="1644402935951" />
+    <state x="1045" y="434" width="526" height="596" key="FileChooserDialogImpl/67.27.2493.1413@67.27.2493.1413" timestamp="1639812818973" />
+    <state x="327" y="1056" key="com.intellij.ide.util.TipDialog" timestamp="1644669056192">
+      <screen x="0" y="816" width="1920" height="1080" />
+    </state>
+    <state x="327" y="1056" key="com.intellij.ide.util.TipDialog/1920.0.2560.1440/0.816.1920.1080@0.816.1920.1080" timestamp="1644669056192" />
+    <state x="491" y="341" key="com.intellij.ide.util.TipDialog/67.27.2493.1413@67.27.2493.1413" timestamp="1639812813945" />
+    <state x="482" y="860" width="533" height="864" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644935101170">
+      <screen x="67" y="27" width="1373" height="2533" />
+    </state>
+    <state x="482" y="860" width="533" height="864" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1373.2533@67.27.1373.2533" timestamp="1644935101170" />
+    <state x="489" y="179" width="862" height="2372" key="find.popup" timestamp="1645104201524">
+      <screen x="67" y="27" width="1373" height="2533" />
+    </state>
+    <state x="628" y="885" width="862" height="1011" key="find.popup/1920.0.2560.1440/0.816.1920.1080@0.816.1920.1080" timestamp="1644582464819" />
+    <state x="489" y="179" width="862" height="2372" key="find.popup/67.27.1373.2533@67.27.1373.2533" timestamp="1645104201524" />
+    <state x="882" y="227" width="862" height="1011" key="find.popup/67.27.2493.1413@67.27.2493.1413" timestamp="1637753467679" />
+  </component>
+</project>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="evo_colmap" targetName="sfm" />
+      <config projectName="evo_colmap" targetName="tracking_Rate" />
+      <config projectName="evo_colmap" targetName="sort" />
+      <config projectName="evo_colmap" targetName="convertor" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd60079c-b79c-4e52-8285-1a09da594637" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="24vQRWo8KoXrlMqMwDuxJuVhYsW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../colmap" />
+  </component>
+  <component name="RunManager" selected="CMake Application.convertor">
+    <configuration name="convertor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="evo_colmap" TARGET_NAME="convertor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="evo_colmap" RUN_TARGET_NAME="convertor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="evo_colmap" TARGET_NAME="sfm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="evo_colmap" RUN_TARGET_NAME="sfm">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="evo_colmap" TARGET_NAME="sort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="evo_colmap" RUN_TARGET_NAME="sort">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tracking_Rate" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="evo_colmap" TARGET_NAME="tracking_Rate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="evo_colmap" RUN_TARGET_NAME="tracking_Rate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.convertor" />
+      <item itemvalue="CMake Application.sfm" />
+      <item itemvalue="CMake Application.sort" />
+      <item itemvalue="CMake Application.tracking_Rate" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd60079c-b79c-4e52-8285-1a09da594637" name="Default Changelist" comment="" />
+      <created>1644508572692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644508572692</updated>
+      <workItem from="1644508573913" duration="1000" />
+      <workItem from="1645105089660" duration="820000" />
+      <workItem from="1645191493173" duration="2000" />
+      <workItem from="1645201534835" duration="1235000" />
+      <workItem from="1645261039343" duration="2288000" />
+      <workItem from="1645353138285" duration="607000" />
+      <workItem from="1645361454984" duration="620000" />
+      <workItem from="1645367820790" duration="8000" />
+      <workItem from="1645367839447" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="485" y="994" width="526" height="596" key="FileChooserDialogImpl" timestamp="1645361474495">
+      <screen x="67" y="27" width="1373" height="2533" />
+    </state>
+    <state x="485" y="994" width="526" height="596" key="FileChooserDialogImpl/67.27.1373.2533@67.27.1373.2533" timestamp="1645361474495" />
+    <state x="332" y="1080" key="com.intellij.ide.util.TipDialog" timestamp="1645367839586">
+      <screen x="67" y="27" width="1373" height="2533" />
+    </state>
+    <state x="332" y="1080" key="com.intellij.ide.util.TipDialog/67.27.1373.2533@67.27.1373.2533" timestamp="1645367839586" />
+  </component>
+</project>
