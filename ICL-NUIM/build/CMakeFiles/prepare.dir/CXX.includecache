@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/changfei/whelan_ws/src/EVO_ORB_SLAM3/ICL-NUIM/src/prepare.cc
+iostream
+-
+fstream
+-
+sstream
+-
+vector
+-
+
