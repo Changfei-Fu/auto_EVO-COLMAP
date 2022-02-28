@@ -19,5 +19,7 @@ This project use evo to evaluate colmap on several datasets such as EuRoc, TUM, 
   
 # Examples
 python3 evo_Tum.py ~/dataset/Tum/folders
+
 python3 evo_EuRoc.py ~/dataset/EuRoc/folders
+
 python3 evo_ICL-NUIM.py ~/dataset/ICL-NUIM/folders
