@@ -33,6 +33,6 @@ cd ./auto_EVO-COLMAP/EuRoc
 
 python3 evo_EuRoc.py ~/dataset/EuRoc/folders
 
-# 3. Specialty
+# Specialty
 ...
 
