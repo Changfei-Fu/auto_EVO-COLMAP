@@ -15,10 +15,24 @@ make -j
 
 sudo make install
   
-# Examples
+## 2. At the second step you do nothing apart from running the python programs.
+
+## Examples
+#### ICL-NUIM dataset
+cd ./auto_EVO-COLMAP/ICL-NUIM
+
+python3 evo_ICL-NUIM.py ~/dataset/ICL-NUIM/folders
+
+#### Tum dataset
+cd ./auto_EVO-COLMAP/Tum
 
 python3 evo_Tum.py ~/dataset/Tum/folders
 
+#### EuRoc dataset
+cd ./auto_EVO-COLMAP/EuRoc
+
 python3 evo_EuRoc.py ~/dataset/EuRoc/folders
 
-python3 evo_ICL-NUIM.py ~/dataset/ICL-NUIM/folders
+# Specialty
+...
+
