@@ -199,7 +199,7 @@ def evo_data(data_Path,times):#输入某个数据集地址
     sum_time=sum(time)
 
 
-    data=open("./Results.txt","a")
+    data=open(results_Path+"/Results.txt","a")
     print("mean ape is: "+str(sum_ape/times),file=data)
     print("mean tracking_Rate is: "+str(sum_tracking_Rate/times)+"%",file=data)
     print("mean costed time is: "+str(sum_time/times),file=data)
