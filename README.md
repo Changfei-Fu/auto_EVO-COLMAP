@@ -18,17 +18,17 @@ sudo make install
 ## 2. At the second step you do nothing apart from running the python programs.
 
 ## Examples
-#### 1. ICL-NUIM dataset
+#### 1). ICL-NUIM dataset
 cd ./auto_EVO-COLMAP/ICL-NUIM
 
 python3 evo_ICL-NUIM.py ~/dataset/ICL-NUIM/folders
 
-#### 2. Tum dataset
+#### 2). Tum dataset
 cd ./auto_EVO-COLMAP/Tum
 
 python3 evo_Tum.py ~/dataset/Tum/folders
 
-#### 3. EuRoc dataset
+#### 3). EuRoc dataset
 cd ./auto_EVO-COLMAP/EuRoc
 
 python3 evo_EuRoc.py ~/dataset/EuRoc/folders
